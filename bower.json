@@ -1,0 +1,19 @@
+{
+  "name": "Css generator v4",
+  "homepage": "https://github.com/kounelios13/Css-generator-v4",
+  "authors": [
+    "kounelios13 <pkounelios@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
