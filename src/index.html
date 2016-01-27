@@ -92,27 +92,27 @@
 			<h1>Text-shadow</h1>
 			<div class="slider_container">
 				<h2 class="text-center" id="text_shadow_demo">Text-shadow</h2>
-				<input type="range" class="text_shadow_slider ultra_app" min="0" max="100" value="0" step="1"id="text_shadow_x">
-				<input type="range" class="text_shadow_slider ultra_app" min="0" max="100" value="0" step="1"id="text_shadow_y">
+				<input type="range" class="text_shadow_slider ultra_app" min="-100" max="100" value="0" step="1"id="text_shadow_x">
+				<input type="range" class="text_shadow_slider ultra_app" min="-100" max="100" value="0" step="1"id="text_shadow_y">
 				<input type="range" class="text_shadow_slider ultra_app" min="0" max="10" value="0" step="0.1"id="text_shadow_blur">
 				<hr class="rule">
 				<h2>Colors</h2>
 				<div class="row">
 					<div class="col-md-3">
 						<h3 class="text-center">Red</h3>
-						<input type="range" class="ultra_app text_color" id="text_shadow_red">
+						<input type="range" class="ultra_app text_color" id="text_shadow_red" min="0" max="255" value="0" step="1">
 					</div>
 					<div class="col-md-3">
 						<h3 class="text-center">Green</h3>
-						<input type="range" class="ultra_app text_color" id="text_shadow_green">
+						<input type="range" class="ultra_app text_color" id="text_shadow_green" min="0" max="255" value="0">
 					</div>
 					<div class="col-md-3">
 						<h3 class="text-center">Blue</h3>
-						<input type="range" class="ultra_app text_color" id="text_shadow_blue">
+						<input type="range" class="ultra_app text_color" id="text_shadow_blue" min="0" max="255" value="0">
 					</div>
 					<div class="col-md-3">
 						<h3 class="text-center">Opacity</h3>
-						<input type="range" class="ultra_app text_color" id="text_shadow_opacity">
+						<input type="range" class="ultra_app text_color" id="text_shadow_opacity" min="0" max="1" value="1" step="0.1">
 					</div>
 				</div>
 			</div>
@@ -135,6 +135,10 @@
 					<li class="list-group-item">
 						border-radius: <span class="h5 borderRadius">0</span>;
 						<span class="btn btn-primary pull-right" onclick="fav('radius')">Add to favourites</span>
+					</li>
+					<li class="list-group-item">
+						text-shadow:<span class="h5 text_shadow_code_output">none</span>;
+						<span class="btn btn-primary pull-right" onclick="fav('text-shadow')">Add to favourites</span>
 					</li>
 				</ul>
 			</div><!--  #code_output -->
