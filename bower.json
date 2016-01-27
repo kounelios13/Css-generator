@@ -4,8 +4,8 @@
   "authors": [
     "kounelios13 <pkounelios@gmail.com>"
   ],
-  "description": "",
-  "main": "",
+  "description": "A simple multipurpose generator",
+  "main": "src/index.html",
   "moduleType": [],
   "license": "MIT",
   "private": true,
@@ -17,7 +17,13 @@
     "tests"
   ],
   "dependencies": {
+    "bootstrap": "~3.3.6",
     "bootbox.js": "bootbox#~4.4.0",
     "filesaver": "*"
-  }
+  },
+  "keywords": [
+    "css",
+    "box-shadow",
+    "border-radius"
+  ]
 }
