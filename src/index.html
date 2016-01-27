@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-
 	<title>Transformations v4.2</title>
-
 	<link href="../bower_components//bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/sliders.css" id="sliding">
 	<link rel="stylesheet" type="text/css" href="css/transformations.css">
 	<script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../bower_components/filesaver/FileSaver.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.js"></script>
 	<script src="../bower_components/bootbox.js/bootbox.js"></script>
 	<script type="text/javascript" src="js/transformations.min.js"></script>
 	<style>
@@ -125,7 +124,7 @@
 			<div id="code_output">
 				<ul class="list-group">
 					<li class="list-group-item">
-						transform: <span class="h5 transform"></span>
+						transform: <span class="h5 transform">none</span>;
 						<span class="btn btn-primary pull-right" onclick="fav('transform')">Add to favourites</span>
 					</li>
 					<li class="list-group-item">
@@ -183,6 +182,7 @@
 				</thead>
 			</table>
 		</div>
+		<div class="btn btn-block btn-success" onclick="saving()">Download code</div>	
 	</div><!--.container-->
 </body>
 <script>
