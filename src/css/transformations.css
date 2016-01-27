@@ -47,6 +47,9 @@
 			width: 25%;
 			display: inline;
 		}
+		input[type="range"].text_color{
+			width:100%;
+		}
 		input[type="range"].box_shadow{
 			width: 20%;
 		}
