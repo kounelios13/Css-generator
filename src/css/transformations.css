@@ -26,16 +26,17 @@
 		position: relative;
 		z-index:999 !important;
 	}
-	/*.rule{
-		padding:0.4em; 
-		height: 3px;
+	/* .rule{
+		padding:0.1em; 
+		border-radius: 90px;
+		height: 1px;
 		width: 80%;
 		display: block;
 		margin:auto;
 		border:2px solid dodgerblue;
 		margin-bottom: 0.4em;
 		background: lightblue;
-	}*/
+	} */
 	button{
 		border:0px;
 		padding: 0.5em;
@@ -56,18 +57,11 @@
 		input[type="range"]#in{
 			width: 10% !important;
 		}
-		#export{
-			background-image: -webkit-gradient(
-	linear,
-	right top,
-	right top,
-	color-stop(0.37, #24F0B6),
-	color-stop(0.54, #FF7E42),
-	color-stop(0.74, #0F7CDC)
-);
-background-image: -o-linear-gradient(right top, #24F0B6 37%, #FF7E42 54%, #0F7CDC 74%);
-background-image: -moz-linear-gradient(right top, #24F0B6 37%, #FF7E42 54%, #0F7CDC 74%);
-background-image: -webkit-linear-gradient(right top, #24F0B6 37%, #FF7E42 54%, #0F7CDC 74%);
-background-image: -ms-linear-gradient(right top, #24F0B6 37%, #FF7E42 54%, #0F7CDC 74%);
-background-image: linear-gradient(to right top, #24F0B6 37%, #FF7E42 54%, #0F7CDC 74%);
-		}
+#export{
+		background-image: -webkit-gradient(linear,right top,right top,color-stop(0.37, #24F0B6),color-stop(0.54, #FF7E42),color-stop(0.74, #0F7CDC));
+        background-image: -o-linear-gradient(right top, #24F0B6 37%, #FF7E42 54%, #0F7CDC 74%);
+        background-image: -moz-linear-gradient(right top, #24F0B6 37%, #FF7E42 54%, #0F7CDC 74%);
+        background-image: -webkit-linear-gradient(right top, #24F0B6 37%, #FF7E42 54%, #0F7CDC 74%);
+        background-image: -ms-linear-gradient(right top, #24F0B6 37%, #FF7E42 54%, #0F7CDC 74%);
+        background-image: linear-gradient(to right top, #24F0B6 37%, #FF7E42 54%, #0F7CDC 74%);
+}
