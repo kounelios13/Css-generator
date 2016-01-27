@@ -34,7 +34,7 @@
 	<div class="container">
 		<div class="jumbotron">
 			<h1 class="text-center">
-				<span>CCS Transformations v4.0</span>
+				<span>CCS Transformations v4.2</span>
 			</h1>
 			<p>Create stunning transformations</p>
 			<p>
@@ -88,6 +88,33 @@
 				<hr class="rule">
 				<input type="range" class="radius ultra_app" id="bl" min="0" max="100" step="1" value="0">
 				<input type="range" class="radius ultra_app" id="br" min="0" max="100" step="1" value="0">
+			</div>
+			<h1>Text-shadow</h1>
+			<div class="slider_container">
+				<h2 class="text-center" id="text_shadow_demo">Text-shadow</h2>
+				<input type="range" class="text_shadow_slider ultra_app" min="0" max="100" value="0" step="1"id="text_shadow_x">
+				<input type="range" class="text_shadow_slider ultra_app" min="0" max="100" value="0" step="1"id="text_shadow_y">
+				<input type="range" class="text_shadow_slider ultra_app" min="0" max="10" value="0" step="0.1"id="text_shadow_blur">
+				<hr class="rule">
+				<h2>Colors</h2>
+				<div class="row">
+					<div class="col-md-3">
+						<h3 class="text-center">Red</h3>
+						<input type="range" class="ultra_app text_color" id="text_shadow_red">
+					</div>
+					<div class="col-md-3">
+						<h3 class="text-center">Green</h3>
+						<input type="range" class="ultra_app text_color" id="text_shadow_green">
+					</div>
+					<div class="col-md-3">
+						<h3 class="text-center">Blue</h3>
+						<input type="range" class="ultra_app text_color" id="text_shadow_blue">
+					</div>
+					<div class="col-md-3">
+						<h3 class="text-center">Opacity</h3>
+						<input type="range" class="ultra_app text_color" id="text_shadow_opacity">
+					</div>
+				</div>
 			</div>
 		</div><!-- #controllers -->
 		<div class="btn btn-primary" id="toggleCode">Hide code</div>
