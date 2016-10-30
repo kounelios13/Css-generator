@@ -1,0 +1,2 @@
+to redirect git log output to a new file type this:
+git log | cat >log.txt
