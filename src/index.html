@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Transformations v5.0</title>
@@ -16,12 +15,10 @@
     .list-group-item {
         padding: 14px;
     }
-    
     td.marked {
         border-right: 2px solid dodgerblue !important;
         border-bottom: 2px solid dodgerblue !important;
     }
-    
     #totransform {
         position: relative;
         -webkit-perspective: 100;
@@ -29,14 +26,12 @@
         transform-style: preserve-3d;
         z-index: 9999;
     }
-    
     input[type="range"] {
         -webkit-box-shadow: none;
         box-shadow: none;
     }
     </style>
 </head>
-
 <body>
     <div class="container">
         <div class="jumbotron">
@@ -51,78 +46,84 @@
         <div id="totransform"></div>
         <div class="btn btn-info" onClick="$('.slider_container').toggle(700)">Toggle controllers</div>
         <div id="controllers">
-
-            <h1>Rotate</h1>
-            <div class="slider_container">
-                <input type="range" id="rotatexd" min="-360" max="360" class="transform_slider ultra_app rotate_slider" value="0">
-                <input type="range" id="rotatey" min="-360" max="360" class="transform_slider ultra_app rotate_slider" value="0">
-                <input type="range" id="rotatez" min="-360" max="360" class="transform_slider ultra_app rotate_slider" value="0">
+            <div id="transformGenerator">
+                <h1>Rotate</h1>
+                <div class="slider_container">
+                    <input type="range" id="rotatexd" min="-360" max="360" class="transform_slider ultra_app rotate_slider" value="0">
+                    <input type="range" id="rotatey" min="-360" max="360" class="transform_slider ultra_app rotate_slider" value="0">
+                    <input type="range" id="rotatez" min="-360" max="360" class="transform_slider ultra_app rotate_slider" value="0">
+                </div>
+                <h1>scale</h1>
+                <div class="slider_container">
+                    <input type="range" class="transform_slider scale ultra_app" id="scalex" min="1" max="3" step="0.1" value="1">
+                    <input type="range" class="transform_slider scale ultra_app" id="scaley" min="1" max="3" step="0.1" value="1">
+                </div>
+                <h1>Translate</h1>
+                <div class="slider_container">
+                    <input type="range" class="transform_slider translate ultra_app" id="tranx" min="-300" max="300" step="1" value="0">
+                    <input type="range" class="transform_slider translate ultra_app" id="trany" min="-300" max="300" step="1" value="0">
+                    <input type="range" class="transform_slider translate ultra_app" id="tranz" min="-300" max="300" step="1" value="0">
+                </div>
+                <h1>Skew</h1>
+                <div class="slider_container">
+                    <input type="range" class="ultra_app skew" id="skewx" min="-180" max="180" value="0" step="1">
+                    <input type="range" class="ultra_app skew" id="skewy" min="-360" max="360" value="0" step="1">
+                    <hr class="rule">
+                </div>
             </div>
-           
-            <h1>scale</h1>
-            <div class="slider_container">
-                <input type="range" class="transform_slider scale ultra_app" id="scalex" min="1" max="3" step="0.1" value="1">
-                <input type="range" class="transform_slider scale ultra_app" id="scaley" min="1" max="3" step="0.1" value="1">
-            </div>
-            <h1>Translate</h1>
-            <div class="slider_container">
-                <input type="range" class="transform_slider translate ultra_app" id="tranx" min="-300" max="300" step="1" value="0">
-                <input type="range" class="transform_slider translate ultra_app" id="trany" min="-300" max="300" step="1" value="0">
-                <input type="range" class="transform_slider translate ultra_app" id="tranz" min="-300" max="300" step="1" value="0">
-            </div>
-            <h1>Skew</h1>
-            <div class="slider_container">
-                <input type="range" class="ultra_app skew" id="skewx" min="-180" max="180" value="0" step="1">
-                <input type="range" class="ultra_app skew" id="skewy" min="-360" max="360" value="0" step="1">
-                <hr class="rule">
-            </div>
-            <h1>Box Shadow</h1>
-            <div class="slider_container">
-                <h2 class="box_shadow_h">Axis control</h2>
-                <input type="range" class="box_shadow ultra_app" id="hor_axis" min="-100" max="100" step="1" value="0">
-                <input type="range" class="box_shadow ultra_app" id="ver_axis" min="-100" max="100" step="1" value="0">
-                <input type="range" class="box_shadow ultra_app" id="blur" min="0" max="20" step="0.1" value="0">
-                <input type="range" class="box_shadow ultra_app" id="spread" min="0" max="20" step="1" value="0">
-                <input type="range" class="box_shadow ultra_app" id="in" min="0" max="1" step="1" value="0">
-                <h2 class="box_shadow_h">Shadow color</h2>
-                <input type="range" class="box_shadow bcolor ultra_app" id="red" min="0" max="255" value="0" step="1">
-                <input type="range" class="box_shadow bcolor ultra_app" id="green" min="0" max="255" value="0" step="1">
-                <input type="range" class="box_shadow bcolor ultra_app" id="blue" min="0" max="255" value="0" step="1">
-                <input type="range" class="box_shadow bcolor ultra_app" id="trans" min="0" max="1" value="1" step="0.1">
+            <div id="boxShadowGenerator">
+                <h1>Box Shadow</h1>
+                <div class="slider_container">
+                    <h2 class="box_shadow_h">Axis control</h2>
+                    <input type="range" class="box_shadow ultra_app" id="hor_axis" min="-100" max="100" step="1" value="0">
+                    <input type="range" class="box_shadow ultra_app" id="ver_axis" min="-100" max="100" step="1" value="0">
+                    <input type="range" class="box_shadow ultra_app" id="blur" min="0" max="20" step="0.1" value="0">
+                    <input type="range" class="box_shadow ultra_app" id="spread" min="0" max="20" step="1" value="0">
+                    <input type="range" class="box_shadow ultra_app" id="in" min="0" max="1" step="1" value="0">
+                    <h2 class="box_shadow_h">Shadow color</h2>
+                    <input type="range" class="box_shadow bcolor ultra_app" id="red" min="0" max="255" value="0" step="1">
+                    <input type="range" class="box_shadow bcolor ultra_app" id="green" min="0" max="255" value="0" step="1">
+                    <input type="range" class="box_shadow bcolor ultra_app" id="blue" min="0" max="255" value="0" step="1">
+                    <input type="range" class="box_shadow bcolor ultra_app" id="trans" min="0" max="1" value="1" step="0.1">
+                </div>
             </div>
             <!--  box-shadow slider_container -->
-            <h1>Border Radius</h1>
-            <div class="slider_container">
-                <input type="range" class="radius ultra_app" id="tl" min="0" max="100" step="1" value="0">
-                <input type="range" class="radius ultra_app" id="tr" min="0" max="100" step="1" value="0">
-                <hr class="rule">
-                <input type="range" class="radius ultra_app" id="bl" min="0" max="100" step="1" value="0">
-                <input type="range" class="radius ultra_app" id="br" min="0" max="100" step="1" value="0">
+            <div id="borderRadiusGenerator">
+                <h1>Border Radius</h1>
+                <div class="slider_container">
+                    <input type="range" class="radius ultra_app" id="tl" min="0" max="100" step="1" value="0">
+                    <input type="range" class="radius ultra_app" id="tr" min="0" max="100" step="1" value="0">
+                    <hr class="rule">
+                    <input type="range" class="radius ultra_app" id="bl" min="0" max="100" step="1" value="0">
+                    <input type="range" class="radius ultra_app" id="br" min="0" max="100" step="1" value="0">
+                </div>
             </div>
-            <h1>Text-shadow</h1>
-            <div class="slider_container">
-                <h2 class="text-center" id="text_shadow_demo">Text-shadow</h2>
-                <input type="range" class="text_shadow_slider ultra_app" min="-100" max="100" value="0" step="1" id="text_shadow_x">
-                <input type="range" class="text_shadow_slider ultra_app" min="-100" max="100" value="0" step="1" id="text_shadow_y">
-                <input type="range" class="text_shadow_slider ultra_app" min="0" max="10" value="0" step="0.1" id="text_shadow_blur">
-                <hr class="rule">
-                <h2>Colors</h2>
-                <div class="row">
-                    <div class="col-md-3">
-                        <h3 class="text-center">Red</h3>
-                        <input type="range" class="ultra_app text_color" id="text_shadow_red" min="0" max="255" value="0" step="1">
-                    </div>
-                    <div class="col-md-3">
-                        <h3 class="text-center">Green</h3>
-                        <input type="range" class="ultra_app text_color" id="text_shadow_green" min="0" max="255" value="0">
-                    </div>
-                    <div class="col-md-3">
-                        <h3 class="text-center">Blue</h3>
-                        <input type="range" class="ultra_app text_color" id="text_shadow_blue" min="0" max="255" value="0">
-                    </div>
-                    <div class="col-md-3">
-                        <h3 class="text-center">Opacity</h3>
-                        <input type="range" class="ultra_app text_color" id="text_shadow_opacity" min="0" max="1" value="1" step="0.1">
+            <div id="textShadowGenerator">
+                <h1>Text-shadow</h1>
+                <div class="slider_container">
+                    <h2 class="text-center" id="text_shadow_demo">Text-shadow</h2>
+                    <input type="range" class="text_shadow_slider ultra_app" min="-100" max="100" value="0" step="1" id="text_shadow_x">
+                    <input type="range" class="text_shadow_slider ultra_app" min="-100" max="100" value="0" step="1" id="text_shadow_y">
+                    <input type="range" class="text_shadow_slider ultra_app" min="0" max="10" value="0" step="0.1" id="text_shadow_blur">
+                    <hr class="rule">
+                    <h2>Colors</h2>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h3 class="text-center">Red</h3>
+                            <input type="range" class="ultra_app text_color" id="text_shadow_red" min="0" max="255" value="0" step="1">
+                        </div>
+                        <div class="col-md-3">
+                            <h3 class="text-center">Green</h3>
+                            <input type="range" class="ultra_app text_color" id="text_shadow_green" min="0" max="255" value="0">
+                        </div>
+                        <div class="col-md-3">
+                            <h3 class="text-center">Blue</h3>
+                            <input type="range" class="ultra_app text_color" id="text_shadow_blue" min="0" max="255" value="0">
+                        </div>
+                        <div class="col-md-3">
+                            <h3 class="text-center">Opacity</h3>
+                            <input type="range" class="ultra_app text_color" id="text_shadow_opacity" min="0" max="1" value="1" step="0.1">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -206,5 +207,4 @@ $("#toggleCode").click(function() {
     $("#toggleCode").text(display ? "Hide code" : "Show code");
 });
 </script>
-
 </html>
