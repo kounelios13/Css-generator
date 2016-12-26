@@ -141,26 +141,24 @@
                 <!--id="code_output"-->
                 <div class="panel-heading text-center">Code output</div>
                 <div class="panel-body">
+                    <h3>Select the codes you want to add to your favourites and press <code>Add to favourites</code></h3>
                     <div id="code_output">
                         <ul class="list-group">
-                            <li class="list-group-item">
+                            <li class="list-group-item" data-function="fav('transform')">
                                 transform: <span class="h5 transform">none</span>;
-                                <div class="btn btn-primary pull-right" onclick="fav('transform')">Add to favourites</div>
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-group-item" data-function="fav()">
                                 box-shadow: <span class="box h5">none</span>;
-                                <div class="btn btn-primary pull-right" onclick="fav()">Add to favourites</div>
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-group-item" data-function="fav('radius')">
                                 border-radius: <span class="h5 borderRadius">0</span>;
-                                <div class="btn btn-primary pull-right" onclick="fav('radius')">Add to favourites</div>
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-group-item" data-function="fav('text-shadow')">
                                 text-shadow:<span class="h5 text_shadow_code_output">none</span>;
-                                <div class="btn btn-primary pull-right" onclick="fav('text-shadow')">Add to favourites</div>
                             </li>
                         </ul>
                     </div>
+                    <div class='btn btn-info' id="addToFavouritesBtn">Add to favourites</div>
                     <!--  #code_output -->
                 </div>
                 <div class='panel-footer'>Copyright (c) 2016 kounelios13</div>
@@ -188,7 +186,7 @@
             </table>
             <table class="table table-striped table-condensed" id="table_rad">
                 <thead>
-                    <th onclick="$(.rad_marked).toggle(800)">Border radius.Total <span id="radius_total">(0)</span>
+                    <th onclick="$('.rad_marked').toggle(800)">Border radius.Total <span id="radius_total">(0)</span>
                     </th>
                 </thead>
                 <tbody>
