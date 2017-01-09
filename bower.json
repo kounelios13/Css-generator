@@ -1,10 +1,10 @@
 {
-  "name": "Css generator v4",
-  "homepage": "https://github.com/kounelios13/Css-generator-v4",
+  "name": "Css generator v6.0.2",
+  "homepage": "https://github.com/kounelios13/Css-generator",
   "authors": [
     "kounelios13 <pkounelios@gmail.com>"
   ],
-  "description": "A simple multipurpose generator",
+  "description": "A multipurpose CSS generator.Includes transform,box-shadow,text-shadow,border-radius",
   "main": "src/index.html",
   "moduleType": [],
   "license": "MIT",
