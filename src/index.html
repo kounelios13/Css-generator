@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <title>Transformations v6.0.1</title>
+    <title>Transformations v6.0.2</title>
     <link href="../bower_components//bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/sliders.css" id="sliding">
     <link rel="stylesheet" type="text/css" href="css/transformations.css">
@@ -37,7 +37,7 @@
     <div class="container">
         <div class="jumbotron">
             <h1 class="text-center">
-				<span>CSS Transformations v6.0.1</span>
+				<span>CSS Transformations v6.0.2</span>
 				</h1>
             <p>Create stunning transformations</p>
             <p>
@@ -134,7 +134,7 @@
         <div id="restart" class="btn btn-warning">Reset transformations</div>
         <div class="btn btn-primary" id="toggleCode">Hide code</div>
         <div class='btn btn-info' onclick="$('#Favourites').toggle(789)">Toggle favourites</div>
-        <div class='btn btn-info' onclick="saveCode('f')">Download favourites</div>
+        <div class='btn btn-info' id="downloadFavourites">Download favourites</div>
         <div class="btn btn-danger" onclick="removefav()">Remove favourites</div>
         <div id="export" class="jumbotron">
             <div class="panel panel-primary">
@@ -159,6 +159,7 @@
                         </ul>
                     </div>
                     <div class='btn btn-info' id="addToFavouritesBtn">Add to favourites</div>
+                    <div class= "btn btn-info pull-right" onClick="$('#code_output li').addClass('active')">Select all</div>
                     <!--  #code_output -->
                 </div>
                 <div class='panel-footer'>Copyright (c) 2016 kounelios13</div>
@@ -202,7 +203,7 @@
                 </thead>
             </table>
         </div>
-        <div class="btn btn-block btn-success" onclick="saveCode()">Download code</div>
+        <div class="btn btn-block btn-success" id ="downloadCode">Download code</div>
     </div>
     <!--.container-->
 </body>
