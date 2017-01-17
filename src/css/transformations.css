@@ -1,60 +1,51 @@
-.jumbotron{
-	background: dodgerblue;
-	border:0.5px solid lightsteelblue;
+.jumbotron {
+    background: dodgerblue;
+    border: 0.5px solid lightsteelblue;
 }
-#export.jumbotron{
+#export.jumbotron {
     background: none;
-    border:none;
+    border: none;
 }
-.vendor{
-	display: none;
+#boxshadowcode {
+    display: none;
 }
-#boxshadowcode{
-	display: none;
+#totransform {
+    -webkit-prespective: 600px;
+    prespective: 600px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    background: lightblue;
+    margin: auto;
+    height: 10em;
+    width: 10em;
+    border: 2px solid dodgerblue;
+    z-index: -1;
 }
-#totransform{
-		-webkit-prespective:600px;
-		prespective:600px;
-		-webkit-transform-style: preserve-3d;
-    	-moz-transform-style: preserve-3d;
-    	-ms-transform-style: preserve-3d;
-    	transform-style: preserve-3d;
-		background: lightblue;
-		margin: auto;
-		height: 10em;
-		width: 10em;
-		border:2px solid dodgerblue;
-
-	}
-	#controllers,#export{
-		position: relative;
-		z-index:999 !important;
-	}
-	button{
-		border:0px;
-		padding: 0.5em;
-		border-radius: 5px;
-		background:dodgerblue;
-		outline:0px;/*Chrome hack*/
-	}
-		input[type="range"].ultra_app{
-			width: 25%;
-			display: inline;
-		}
-		input[type="range"].text_color{
-			width:100%;
-		}
-		input[type="range"].box_shadow{
-			width: 20%;
-		}
-		input[type="range"]#in{
-			width: 10% !important;
-		}
-body{
-		background-image: -webkit-gradient(linear,right top,right top,color-stop(0.37, #24F0B6),color-stop(0.54, #FF7E42),color-stop(0.74, #0F7CDC));
-        background-image: -o-linear-gradient(right top, #24F0B6 37%, #FF7E42 54%, #0F7CDC 74%);
-        background-image: -moz-linear-gradient(right top, #24F0B6 37%, #FF7E42 54%, #0F7CDC 74%);
-        background-image: -webkit-linear-gradient(right top, #24F0B6 37%, #FF7E42 54%, #0F7CDC 74%);
-        background-image: -ms-linear-gradient(right top, #24F0B6 37%, #FF7E42 54%, #0F7CDC 74%);
-        background-image: linear-gradient(to right top, #24F0B6 37%, #FF7E42 54%, #0F7CDC 74%);
+#controllers,
+#export {
+    position: relative;
+    z-index: 999 !important;
+}
+input[type="range"].ultra_app {
+    width: 25%;
+    display: inline;
+}
+input[type="range"].text_color {
+    width: 100%;
+}
+input[type="range"].box_shadow {
+    width: 20%;
+}
+input[type="range"]#in {
+    width: 10% !important;
+}
+body {
+    background-image: -webkit-gradient(linear, right top, right top, color-stop(0.37, #24F0B6), color-stop(0.54, #FF7E42), color-stop(0.74, #0F7CDC));
+    background-image: -o-linear-gradient(right top, #24F0B6 37%, #FF7E42 54%, #0F7CDC 74%);
+    background-image: -moz-linear-gradient(right top, #24F0B6 37%, #FF7E42 54%, #0F7CDC 74%);
+    background-image: -webkit-linear-gradient(right top, #24F0B6 37%, #FF7E42 54%, #0F7CDC 74%);
+    background-image: -ms-linear-gradient(right top, #24F0B6 37%, #FF7E42 54%, #0F7CDC 74%);
+    background-image: linear-gradient(to right top, #24F0B6 37%, #FF7E42 54%, #0F7CDC 74%);
 }
