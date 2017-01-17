@@ -21,7 +21,8 @@
     height: 10em;
     width: 10em;
     border: 2px solid dodgerblue;
-    z-index: -1;
+    #fixes 26
+    z-index: -9999;
 }
 #controllers,
 #export {
