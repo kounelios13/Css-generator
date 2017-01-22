@@ -32,21 +32,6 @@
         box-shadow: none;
     }
     </style>
-    <script type="text/javascript">
-        $(function(){
-            var allGenerators = $(".generatorContainer");
-            allGenerators.hide();
-            $(".generatorContainer[data-generator=0]").show();
-            $(".navbar-nav a").on("click",function(){
-                allGenerators.hide();
-                $cur = $(this);
-                var number = $cur.data("panel");
-                $(".navbar-nav li").removeClass("active");
-                $(".generatorContainer[data-generator="+number+"]").show();
-                $cur.parent("li").addClass("active");
-            });
-        })
-    </script>
 </head>
 <body>
     <nav class="navbar navbar-inverse" role="navigation">
