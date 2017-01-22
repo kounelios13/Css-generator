@@ -32,6 +32,21 @@
         box-shadow: none;
     }
     </style>
+    <script type="text/javascript">
+        $(function(){
+            var allGenerators = $(".generatorContainer");
+            allGenerators.hide();
+            $(".generatorContainer[data-generator=0]").show();
+            $(".navbar-nav a").on("click",function(){
+                allGenerators.hide();
+                $cur = $(this);
+                var number = $cur.data("panel");
+                $(".navbar-nav li").removeClass("active");
+                $(".generatorContainer[data-generator="+number+"]").show();
+                $cur.parent("li").addClass("active");
+            });
+        })
+    </script>
 </head>
 <body>
     <nav class="navbar navbar-inverse" role="navigation">
@@ -46,14 +61,13 @@
                 </button>
                 <a class="navbar-brand" href="#">CSS Multi-purpose Generator</a>
             </div>
-    
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li ><a href="#">CSS Transform Generator</a></li>
-                    <li><a href="#">CSS Box Shadow Generator</a></li>
-                    <li><a href="#">CSS Border Radius Generator</a></li>
-                    <li><a href="#">CSS Text Shadow Generator</a></li>
+                    <li class="active"><a href="#" data-panel="0">CSS Transform Generator</a></li>
+                    <li><a href="#" data-panel="1">CSS Box Shadow Generator</a></li>
+                    <li><a href="#" data-panel="2">CSS Border Radius Generator</a></li>
+                    <li><a href="#" data-panel="3">CSS Text Shadow Generator</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Link</a></li>
@@ -73,8 +87,8 @@
     <div class="container">
         <div class="jumbotron">
             <h1 class="text-center">
-				<span>CSS Transformations v6.0.2</span>
-				</h1>
+                <span>CSS Transformations v6.0.2</span>
+                </h1>
             <p>Create stunning transformations</p>
             <p>
                 <strong>Don't worry about prefixes.When you press download you will get everything <em>prefixed.</em></strong>
@@ -82,7 +96,6 @@
         </div>
         <div id="totransform"></div>
         <div class="btn btn-info" onClick="$('.generatorContainer').toggle(700)">Toggle controllers</div>
-        <div class="btn btn-info" id="generatorSelector">Select generators to show</div>
         <div id="controllers">
             <div id="transformGenerator" class="generatorContainer" data-generator="0">
                 <h1>Rotate</h1>
