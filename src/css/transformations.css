@@ -41,20 +41,32 @@ input[type="range"].box_shadow {
 input[type="range"]#in {
     width: 10% !important;
 }
+.modal-body .row{
+    padding: 4px;
+}
 body {
-    background-image: -webkit-gradient(linear, right top, right top, color-stop(0.37, #24F0B6), color-stop(0.54, #FF7E42), color-stop(0.74, #0F7CDC));
-    background-image: -o-linear-gradient(right top, #24F0B6 37%, #FF7E42 54%, #0F7CDC 74%);
-    background-image: -moz-linear-gradient(right top, #24F0B6 37%, #FF7E42 54%, #0F7CDC 74%);
-.list-group-item {
-
-    background-image: -webkit-linear-gradient(right top, #24F0B6 37%, #FF7E42 54%, #0F7CDC 74%);
-    background-image: -ms-linear-gradient(right top, #24F0B6 37%, #FF7E42 54%, #0F7CDC 74%);
-    background-image: linear-gradient(to right top, #24F0B6 37%, #FF7E42 54%, #0F7CDC 74%);
-}    padding: 14px;
+    background: url("./images/1.jpg") no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -ms-background-size:cover;
+    -o-background-size:cover;
+    background-size: cover;    
+}
+.list-group-item{
+    padding: 14px;
 }
 td.marked {
     border-right: 2px solid dodgerblue !important;
     border-bottom: 2px solid dodgerblue !important;
+}
+.bg-image{
+    height: 5em;
+    width:  5em;
+    transition: 900ms all;
+}
+.bg-image.active{
+    border:4px solid dodgerblue;
+    border-radius:100px;
 }
 #totransform {
     position: relative;
