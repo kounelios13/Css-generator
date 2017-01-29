@@ -60,6 +60,9 @@ td.marked {
     height: 5em;
     width:  5em;
 }
+.bg-image.active{
+    border:2px solid dodgerblue;
+}
 #totransform {
     position: relative;
     -webkit-perspective: 100;
