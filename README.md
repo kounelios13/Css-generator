@@ -10,3 +10,4 @@ This is a simple app for web design.It contains the following generators:
   
 To start the app just download it and open the index.html file
 _The zip file contains everything needed for the project._   
+## This app uses a lot of es6 feautures so it might not work as expected in old browsers
