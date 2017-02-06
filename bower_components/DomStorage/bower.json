@@ -1,0 +1,23 @@
+{
+  "name": "domStorage",
+  "homepage": "https://github.com/kounelios13/Dom-Storage",
+  "authors": [
+    "kounelios13 <pkounelios@gmail.com>"
+  ],
+  "description": "A small helper for jQuery that helps you cache the selectors you use",
+  "main": "domStorage.js",
+  "moduleType": [],
+  "keywords": [
+    "jQuery",
+    "cache"
+  ],
+  "ignore": [
+    "*.html",
+    "README.md",
+    "validator.js"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "DomStorage": "domstorage#*"
+  }
+}

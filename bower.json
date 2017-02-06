@@ -19,7 +19,8 @@
   "dependencies": {
     "bootstrap": "~3.3.6",
     "bootbox.js": "bootbox#~4.4.0",
-    "filesaver": "*"
+    "filesaver": "*",
+    "DomStorage": "domstorage#*"
   },
   "keywords": [
     "css",
